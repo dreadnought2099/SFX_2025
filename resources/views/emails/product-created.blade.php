@@ -23,17 +23,17 @@
                 <p><strong>Price:</strong> ${{ number_format($product->price, 2) }}</p>
             </div>
 
-            <p style="font-size: 15px;">You can view more details by clicking the button below:</p>
+            {{-- <p style="font-size: 15px;">You can view more details by clicking the button below:</p>
 
-            {{-- <p>
+            <p>
                 <a href="{{ url('/products/' . $product->id) }}"
                     style="display: inline-block; padding: 12px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">
                     View Product Details
                 </a>
             </p> --}}
 
-            <p style="margin-top: 40px;">Best regards,<br><strong
-                    style="color: #4CAF50">{{ config('app.name') }}</strong></p>
+            <p style="margin-top: 40px;">Best regards,<br><strong style="color: #4CAF50">{{ config('app.name') }}</strong>
+            </p>
         </div>
     </div>
 </body>
